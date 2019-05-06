@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Nilai">
+    <LinearLayout
+        android:id="@+id/timA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/satu_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SATU POINT"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/dua_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DUA POINT"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/tiga_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIGA POINT"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tim_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA TIM A"
+            android:textAlignment="center"
+            android:textSize="36dp"/>
+        <TextView
+            android:id="@+id/nilai_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="80dp"/>
+        <Button
+            android:id="@+id/reset_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET PERHITUNGAN"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="bottom"
+        android:id="@+id/timB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/timA"
+        >
+        <Button
+            android:id="@+id/reset_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET PERHITUNGAN"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/nilai_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="80dp"/>
+        <TextView
+            android:id="@+id/tim_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA TIM B"
+            android:textAlignment="center"
+            android:textSize="36dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/satu_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SATU POINT"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/dua_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DUA POINT"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/tiga_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIGA POINT"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
